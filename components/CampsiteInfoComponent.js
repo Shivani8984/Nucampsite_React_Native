@@ -71,14 +71,14 @@ function RenderComments({comments}){
 
 class CampsiteInfo extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            // campsites: CAMPSITES,
-            // comments: COMMENTS, 
-            favorite: false
-        };
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         // campsites: CAMPSITES,
+    //         // comments: COMMENTS, 
+    //         favorite: false
+    //     };
+    // }
 
     static navigationOptions = {
         title: 'Campsite Information'
