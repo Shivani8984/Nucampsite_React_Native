@@ -170,3 +170,10 @@ export const addComment = comment => ({
     type: ActionTypes.ADD_COMMENT,
     payload: comment
 });
+
+//Below is non-thunk action creator
+
+export const deleteFavorite = campsiteId => ({
+    type: ActionTypes.DELETE_FAVORITE,
+    payload: campsiteId //this is campsite id to be deleted
+})
