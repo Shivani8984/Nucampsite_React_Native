@@ -185,7 +185,7 @@ class RegisterTab extends Component {
         }
     }
 
-    async processImage(imgUri) {
+    processImage = async (imgUri) => {
         const processedImage = await ImageManipulator.manipulateAsync(imgUri,
             [{ resize: { width: 400 } }],
             { format: ImageManipulator.SaveFormat.PNG }
@@ -221,7 +221,6 @@ class RegisterTab extends Component {
                             source={{uri: this.state.imageUrl}}
                             loadingIndicatorSource={require('./images/logo.png')}
                             style={styles.image}
-                            //onPress={this.getImageFromCamera}
                         />
                         <Button
                             title='Camera'
